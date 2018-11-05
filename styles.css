@@ -1,0 +1,201 @@
+@font-face {
+    font-family: "Lekton";
+    src: url("lekton.regular.ttf") format("truetype");
+}  
+
+*:focus {outline:none !important}
+
+html {
+    overflow-x: hidden;
+    margin: 0;
+    width:100%; height: 100%;
+}
+
+body, #app, #app > div {
+    font-family: "Lekton", "Courier New", Courier, monospace;
+    margin: 0;
+    width:100%; height: 100%;
+}
+
+.main-container {
+    display: block;
+    box-sizing: border-box;
+    padding: 0 10vw;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+}
+
+header h1 {
+    text-align: center;
+}
+
+.drop-overlay {
+    opacity:    0.9;
+    background: #ffffff; 
+    width:      100%;
+    height:     100%; 
+    z-index:    10;
+    position:   fixed;
+    text-align: center;
+    top: 0;
+    left: 0;
+    right: 0;
+
+}
+
+.drop-overlay-message {
+    position: absolute;
+    margin: 0;
+    height: 50vh;
+    width: 60vw;
+    max-height: 60vw;
+    border: 1px solid black;
+    padding: 20px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.drop-overlay-message h5 {
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+}
+
+
+.file-selector-container {
+    margin-bottom: 12px;
+}
+
+code {
+    display: block;
+    white-space: pre-wrap!important;
+    background-color: #020202;
+    color: #89ef89;
+    width: 100%;
+    min-width: 480px;
+    border-radius: 5px;
+    padding: 0 6px;
+    margin: auto;
+    
+}
+
+.score-line-container {
+    display: block;
+    height: 24px;
+    
+}
+
+.score-line-container-dummy {
+    width: 100%;
+    height: 6px;
+}
+
+.score-line-number {
+    display: inline;
+    color: white;
+    padding-left: 6px;
+    height: 24px;
+    width: 32px;
+    border-right: 1px solid yellow;
+    float: left;
+    user-select: none;
+}
+
+.score-line-number-dummy{
+    height: 6px;
+}
+
+
+.score-line-code {
+    display: inline;
+    margin-left: 12px;
+}
+
+.file-selector-container {
+    display: flex;
+    justify-content: space-between;
+    width: 480px;
+    /* margin-right: 6px; */
+}
+
+.button-success,
+.button-error,
+.button-warning,
+.button-secondary {
+    color: white!important;
+    border-radius: 4px!important;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2)!important;
+}
+
+.button-success {
+    background-color: rgb(28, 184, 65)!important; /* this is a green */
+}
+
+.button-error {
+    background-color: rgb(202, 60, 60)!important; /* this is a maroon */
+}
+
+.button-warning {
+    background-color: rgb(223, 117, 20)!important; /* this is an orange */
+}
+
+.button-secondary {
+    background-color: rgb(66, 184, 221)!important; /* this is a light blue */
+}
+
+
+.files-list {
+    list-style: none;
+    display: block;
+    padding: 0;
+    width: 570px;
+    width: 100%;
+    min-width: 480px;
+    margin: 16px 0;
+}
+
+.files-list-column {
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    
+}
+
+.files-list-column h5 {
+    font-size: 18px;
+    margin: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    min-width: 230px;
+    white-space: nowrap;
+}
+
+.files-list ul {
+    
+}
+
+.files-list-column input {
+    /* margin-left: -32px; */
+    margin-right: 12px;
+    display: inline-block!important;
+}
+
+.files-list-column .pure-checkbox {
+    height: 14px;
+    width: 14px;
+}
+
+.files-list-column .p1val,.tempoval {
+    height: 24px;
+    width: 78px;
+    margin: 0 12px;
+    margin-bottom: 4px;
+}
+
