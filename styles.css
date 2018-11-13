@@ -1,7 +1,7 @@
 @font-face {
     font-family: "Lekton";
     src: url("lekton.regular.ttf") format("truetype");
-}  
+}
 
 *:focus {outline:none !important}
 
@@ -34,9 +34,9 @@ header h1 {
 
 .drop-overlay {
     opacity:    0.9;
-    background: #ffffff; 
+    background: #ffffff;
     width:      100%;
-    height:     100%; 
+    height:     100%;
     z-index:    10;
     position:   fixed;
     text-align: center;
@@ -110,7 +110,7 @@ code::-webkit-scrollbar-thumb
 .score-line-container {
     display: block;
     height: 24px;
-    
+
 }
 
 .score-line-container-dummy {
@@ -150,7 +150,7 @@ code::-webkit-scrollbar-thumb
     justify-content: space-between;
     /* IF STOP AND PLAY ARE INCLUDED */
     width: 480px;
-    width: 320px;
+    width: 400px;
     /* margin-right: 6px; */
 }
 
@@ -195,7 +195,7 @@ code::-webkit-scrollbar-thumb
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-    
+
 }
 
 .files-list-column h5 {
@@ -208,7 +208,7 @@ code::-webkit-scrollbar-thumb
 }
 
 .files-list ul {
-    
+
 }
 
 .files-list-column input {
@@ -228,4 +228,3 @@ code::-webkit-scrollbar-thumb
     margin: 0 12px;
     margin-bottom: 4px;
 }
-
